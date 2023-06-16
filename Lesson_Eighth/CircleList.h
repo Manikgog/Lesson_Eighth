@@ -20,6 +20,8 @@ public:
 	void DeleteElement(int index);
 	void ClearList();
 	Node* FindElement(int index);
+	void BubleSort();
+	
 };
 
 #endif // !_CIRCLELIST_H_

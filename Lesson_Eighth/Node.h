@@ -12,7 +12,7 @@ public:
 
 	Node(int data);
 	int GetData();
-
+	void operator=(Node* node);
 
 };
 

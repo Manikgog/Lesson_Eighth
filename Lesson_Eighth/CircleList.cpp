@@ -154,3 +154,20 @@ void CircleList::ClearList()
 	}
 	return;
 }
+
+void CircleList::BubleSort()
+{
+	int i = 0;
+	for (Node* i_tmp = _head; i < _size-1; ++i, i_tmp = i_tmp->_prev)
+	{
+		int j = 0;
+		for (Node* j_tmp = _head->_prev; j < _size; ++j, j_tmp = j_tmp->_prev)
+		{
+			if (i_tmp->GetData() < j_tmp->GetData())
+			{
+				i_tmp->operator = (j_tmp);
+			}
+		}
+	}
+
+}
